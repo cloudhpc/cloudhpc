@@ -25,6 +25,13 @@
         <hibernate.version>5.3.7.Final</hibernate.version>
         <mysql.connector.version>8.0.13</mysql.connector.version>
         <joinfaces.version>3.3.0-rc2</joinfaces.version>
+        <lombok.version>1.18.4</lombok.version>
+        <liquibase.core.version>3.6.3</liquibase.core.version>
+        <sl4j.version>1.6.6</sl4j.version>
+        <aws.sdk.version>1.11.475</aws.sdk.version>
+        <apache.httpclient.version>4.5.7</apache.httpclient.version>
+        <primefaces.themes.version>1.0.10</primefaces.themes.version>
+        <junit.version>3.8.1</junit.version>
         <!-- Docker configuration -->
 		<docker.registry.host>cloudhpcio</docker.registry.host>
 
@@ -47,23 +54,18 @@
             <dependency>
                 <groupId>com.amazonaws</groupId>
                 <artifactId>aws-java-sdk</artifactId>
-                <version>1.11.475</version>
+                <version>${aws.sdk.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>1.6.6</version>
-            </dependency>
-            <dependency>
-                <groupId>com.rabbitmq</groupId>
-                <artifactId>amqp-client</artifactId>
-                <version>2.8.2</version>
+                <version>${sl4j.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
             <dependency>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-core</artifactId>
-                <version>3.6.3</version>
+                <version>${liquibase.core.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
@@ -79,13 +81,13 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.4</version>
+                <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>4.5.7</version>
+                <version>${apache.httpclient.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.joinfaces</groupId>
@@ -97,12 +99,12 @@
             <dependency>
                 <groupId>org.primefaces.themes</groupId>
                 <artifactId>all-themes</artifactId>
-                <version>1.0.10</version>
+                <version>${primefaces.themes.version}</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>3.8.1</version>
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
