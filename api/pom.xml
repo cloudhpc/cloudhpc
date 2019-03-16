@@ -127,7 +127,7 @@
                 <version>3.4.2</version>
                 <configuration>
                     <propertyFile>db/liquibase.properties</propertyFile>
-                    <changeLogFile>db/changelog/db.changelog-master.xml</changeLogFile>
+                    <changeLogFile>db/changelog/db.changelog-master.yml</changeLogFile>
                 </configuration>
             </plugin>
         </plugins>

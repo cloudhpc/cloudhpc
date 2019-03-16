@@ -31,6 +31,7 @@
         <aws.sdk.version>1.11.475</aws.sdk.version>
         <apache.httpclient.version>4.5.7</apache.httpclient.version>
         <primefaces.themes.version>1.0.10</primefaces.themes.version>
+        <jclouds.version>2.1.2</jclouds.version>
         <junit.version>3.8.1</junit.version>
         <!-- Docker configuration -->
 		<docker.registry.host>cloudhpcio</docker.registry.host>
@@ -45,6 +46,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.jclouds</groupId>
+                <artifactId>jclouds-all</artifactId>
+                <version>${jclouds.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
