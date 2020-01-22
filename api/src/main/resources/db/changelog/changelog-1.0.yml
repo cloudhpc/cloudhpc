@@ -1,8 +1,0 @@
-databaseChangeLog:
-  - changeSet:
-      id: 1
-      author: bsaylan
-      changes:
-        - sql:
-            dbms: h2
-            sql: insert into cluster(name) values('test_cluster')
